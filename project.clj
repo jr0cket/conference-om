@@ -1,8 +1,8 @@
 (defproject conference-om "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :description "A conference schedule app as an example of an Om react library"
+  :url "http://github.com/jr0cket
+  :license {:name "Attribution-ShareAlike 4.0 International"
+            :url "https://creativecommons.org/"}
 
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.89" :scope "provided"]

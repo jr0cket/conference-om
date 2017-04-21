@@ -1,5 +1,17 @@
 # conference-om
 
+A simple conference schedule app that shows the list of talks at a conference and the details of each talk.  Using react you can highlight which talks you want to see and are shown if you want to see more than one talk at the same time.
+
+## Project creation
+
+The project was created with the Leiningen chestnut template
+
+```
+lein new chestnut conference-om
+```
+
+The following sections show examples of how the project can be run.  I prefer to use `clojurescript-jack-in` from Spacemacs (which works well once you have changed the default repl to browser-repl)
+
 
 ## Development
 
