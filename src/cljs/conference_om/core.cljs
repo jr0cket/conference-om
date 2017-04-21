@@ -15,11 +15,28 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Components
 
+(defn conference-schedule
+  "A component to display the schedule of talks for the conference
+Initially just a single placeholder
+Properties such as on dom/a are converted to a javascript object with #js"
+
+  [cursor component]
+  (reify
+    om/IRender
+    (render [_]
+      (dom/div nil
+               (dom/p nil "Talk tile placeholder")
+               (dom/p nil "Talk description placeholder")
+               (dom/a #js {:href "https://twitter.com/jr0cket"} "@jr0cket")))))
+
+
 (defn root-component [app owner]
   (reify
     om/IRender
     (render [_]
-      (dom/div nil (dom/h1 nil (:text app))))))
+      (dom/div nil
+               (dom/h1 nil (:text app))
+               (om/build conference-schedule app)))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Render components with om/root
